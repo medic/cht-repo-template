@@ -1,7 +1,14 @@
 # CHT Product Template Repository
-Template repository for CHT Products.
 
-Default configurations:
+This is a template repository for CHT Products. You can generate a new repository with the same directory structure and files as in this repository.
+
+## Create a repository from this template
+
+When [creating a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository) under the Medic organization, select `cht-repo-template` as a template to use for the new repository.
+
+You can also create a repository directly from the template by following the steps [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+
+## Existing default configurations
 
 - The `main` branch is locked via [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
 - Merges are done through PRs.
@@ -22,16 +29,20 @@ The PR and issue template content can be adjusted according to the product's pur
 Additionally, the person who creates the repository might need to share repository access with appropriate teams (this may require admin access).
 
 ## Items to consider when developing the CHT Product
+
 To ensure quality, the CHT Products should also follow the guidelines below:
 
 ### CI/CD
+
 - Repository runs GitHub Actions CI with automated build and test on each PR.
 
 ### Testing
+
 - Unit tests and successful builds for PR merges are set up.
 - Unit tests cover the majority of the code.
 - If applicable, integration tests run to test the solution e2e.
 
 ### Observability
+
 - Application faults and errors are logged.
 - Logging configuration can be modified without code changes (eg: verbose mode).
