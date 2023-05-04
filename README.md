@@ -16,7 +16,7 @@ You can also create a repository directly from the template by following the ste
 - Issue templates exist.
 - PR template exists.
 - PRs reference related issues.
-- Commit formats follow the [guidelines](https://docs.communityhealthtoolkit.org/contribute/code/workflow/#commits). 
+- Commit formats follow the [guidelines](https://docs.communityhealthtoolkit.org/contribute/code/workflow/#commits). More info about linting Git commit messages with Husky [here](https://remarkablemark.org/blog/2019/05/29/git-husky-commitlint/).
 - The following files exist:
     - `LICENSE` specifying AGPL-3.0 ([example](https://github.com/medic/cht-core/blob/master/LICENSE))
     - `README.md`
