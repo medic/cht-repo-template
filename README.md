@@ -22,7 +22,7 @@ You can also create a repository directly from the template by following the ste
     - `README.md`
 - The PR template contains a code review checklist.
 - A reviewer for a PR merge is enforced by policy.
-- A [linter](https://github.com/medic/eslint-config) is set up.
+- A linter is set up. [Here](https://github.com/medic/eslint-config)'s more info on how to use the `eslint` configurations.
 
 The PR and issue template content can be adjusted according to the product's purpose.
 
