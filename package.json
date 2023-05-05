@@ -1,6 +1,6 @@
 {
     "scripts": {
-      "lint": "eslint . --fix",
+      "lint": "eslint .",
       "postinstall": "husky install"
     },
     "devDependencies": {
