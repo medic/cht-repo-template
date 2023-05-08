@@ -8,6 +8,8 @@ When [creating a new repository](https://docs.github.com/en/repositories/creatin
 
 You can also create a repository directly from the template by following the steps [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
 
+_Note_: You can read more about CHT Product repositories [in the CHT documentation](https://docs.communityhealthtoolkit.org/contribute/code/repository-checklist). 
+
 ## Existing default configurations
 
 - The `main` branch is locked via [branch protection rules](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule).
