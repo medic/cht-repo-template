@@ -22,7 +22,7 @@ jobs:
             | Metric  | Value |
             | ------------- | ------------- |
             | When was the bug introduced (when did the incident begin to impact users)? | _YYYY-MM-DD_  |
-            | When was the bug reported in GitHub? | $TODAY  |
+            | When was the bug reported in GitHub? | ${{env.TODAY}}  |
             | When was the incident mitigated for users? | _YYYY-MM-DD_  |
 
             - [ ] Incident was reported by an end-user.
