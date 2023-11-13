@@ -1,4 +1,4 @@
-name: Add comment
+name: Add incident detail template
 on:
   issues:
     types:
@@ -10,6 +10,9 @@ jobs:
     permissions:
       issues: write
     steps:
+      - name: Get Today's Date
+        id: date
+        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
       - name: Add comment
         uses: peter-evans/create-or-update-comment@v2
         with:
@@ -19,7 +22,7 @@ jobs:
             | Metric  | Value |
             | ------------- | ------------- |
             | When was the bug introduced (when did the incident begin to impact users)? | _YYYY-MM-DD_  |
-            | When was the bug reported in GitHub? | _YYYY-MM-DD_  |
+            | When was the bug reported in GitHub? | $TODAY  |
             | When was the incident mitigated for users? | _YYYY-MM-DD_  |
 
             - [ ] Incident was reported by an end-user.
